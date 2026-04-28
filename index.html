@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panaachecreations - Women's Fashion</title>
+    <meta name="description" content="Modern women's clothing and jewelry ecommerce store" />
+
+    <!-- Tailwind via CDN with forms plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+
+    <!-- Inline Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: {
+                50: '#fef7f7',
+                100: '#fce7f3',
+                300: '#f472b6',
+                400: '#ec4899',
+                500: '#db2777',
+                700: '#be185d',
+                900: '#831843',
+              }
+            },
+            fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+          }
+        }
+      }
+    </script>
+
+    <!-- Optional: Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans bg-gray-50">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
